@@ -1,19 +1,113 @@
 html{
   font-size: 18px;
+  background-color: white;
 }
 
+/* **************************HEADER CODE *********************/
+/* This the code for the header of the page width and height*/
 .Header{
-  background-color: black;
-  display: flex;
+  height:64px;
+  width: 100%;
+  display:inline-flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
 }
-.logo{
+/* ******************Left Section of Header**************** */
+.Header .LeftSection{
+  display:flex;
+  align-items: center;
+}
+/* Header / Logo */
+.Header .LeftSection .logo{
+  padding-left: 24px;
   display: flex;
 }
 
-.title{
+/* Header text propetries */
+.Header .LeftSection .organization{
+  display: flex;
+  color: black;
+  padding: 0;
+  font-weight: bold;
+}
+.Header .LeftSection .organization2{
+  display: flex;
+  color: lightgrey;
+  padding: 0;
+}
+/* **************End of left section coding ***************/
+
+/* ****************Right Section of Header*************** */
+.Header .RightSection{
   display:flex;
-  font-family: Helvetica;
+  align-items: center;
+
+}
+.RightSection {
+  display: inline-block;
+  padding: 0 16px;
+}
+.spacer{
+  display: flex;
+  height:64px;
+  width: 16px;
+  background-color: cyan;
+}
+/* **************End of Right section coding ***************/
+/* **************************HEADER CODE END****************/
+
+/* ************************BANNER CODE *********************/
+.Section1{
+  display:inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: lightgrey;
+}
+
+.Section1 .Banner{
+  display: flex;
+  width: 60%;
+  padding: 0;
+  margin: 32px 24px;
+}
+/* Size the text section of the Banner */
+.Section1 .BannerText{
+  display:flex;
+  flex-direction: column;
+  width: 30%;
+}
+/* Text Properties code for the banner */
+.Section1 .BannerText h1 {
+  font-size: 2rem;
+  color: #393535;
+  padding: 24px 0px;
+}
+.Section1 .BannerText p {
   font-size: 1rem;
+  color: #393535;
+  padding: 24px 0px;
+}
+
+.Section1 .BannerText a {
+  font-size: 0.8rem;
   color: white;
+  background-color: #393535;
+  padding: 24px 0px;
+  text-decoration: none;
+  text-align: center;
+}
+/* ********************END**BANNER CODE *********************/
+/* ***Section 2 Coding It doesn't hurt to keep practicing ***/
+.Section2{
+  display:inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Section2 .Section2Left .InformationMain{
+  width: 60%;
 }
