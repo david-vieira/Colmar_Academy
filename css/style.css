@@ -1,5 +1,5 @@
 html{
-  font-size: 18px;
+  font-size: 20px;
   /* font-family: Verdana, Geneva, Tahoma, sans-serif */
   background-color: white;
 }
@@ -50,11 +50,14 @@ html{
   display: inline-block;
   padding: 0 16px;
 }
+.RightSection p:hover {
+    background-color: lightgrey;
+}
 .spacer{
   display: flex;
   height:64px;
   width: 16px;
-  background-color: lightgrey;
+  background-color: white;
   /* background-color: #393535; */
 }
 /* **************End of Right section coding ***************/
@@ -234,4 +237,231 @@ html{
 }
 .Section2 .Section2Right .OurGuestLecture .Details3{
   width: 65%;
+}
+/* ***END OF Section 2 Coding It doesn't hurt to keep practicing ***/
+/* ******************************************** */
+/* ************Section 3 Start Learning******** */
+/* Common properties for Section3 */
+.Section3{
+  display: block;
+  /* width: 100%; */
+  text-align: center;
+  background-color: lightgrey;
+  justify-content: center;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+/* Title of Section 3 */
+.Section3_Tittle{
+  font-size: 3rem;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* Code for main container of section 3 */
+.Section3Container{
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Common properties for all images of section3 */
+.Section3Images{
+  height: auto;
+  width: 100%;
+}
+/* Common properties for titles of section 3 */
+.Section3Titles{
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: 32px;
+}
+/* Common properties for subtitles of section 3 */
+.Section3SubTittle{
+  font-size: 1.3rem;
+  color: darkgray;
+  padding: 8px 16px;
+}
+
+.Section3Content{
+  font-size: 1rem;
+  color: darkgray;
+  margin-top: 0px;
+  margin-left: 16px;
+  margin-bottom: 24px;
+
+}
+/* Code for Section 3_1 which is the first 3
+horizontal Pictures */
+.Section3_1{
+    display: inline-flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0 0 16px 0;
+}
+/* section 3_1 software engineering */
+.Section3_1 .SoftwareEngineering{
+  margin: 0 16px 16px 0;
+  background-color: white;
+  width: 33%;
+}
+/* section 3_1 Computer Art */
+.Section3_1 .ComputerArt{
+  margin: 0 16px 16px 16px;
+  background-color: white;
+  width: 34%;
+}
+/* section 3_1 Design */
+.Section3_1 .Design{
+  margin: 0 0 16px 16px;
+  background-color: white;
+  width: 33%;
+}
+
+/* Code for Section 3_2 which is the second meshrowof 3 pictures */
+.Section3_2{
+  display: inline-flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+/* section 3_2 Data */
+.Section3_2 .Data{
+  margin: 0 16px 0 0;
+  background-color: white;
+  width: 33%;
+}
+/* section 3_2 Business */
+.Section3_2 .Business{
+  margin: 0 16px 0px 16px;
+  background-color: white;
+  width: 34%;
+}
+/* section 3_2 Marketing */
+.Section3_2 .Marketing{
+  margin: 0 0 0px 16px;
+  background-color: white;
+  width: 33%;
+}
+/* ******END OF Section 3 Start Learning ********/
+/* ******************************************** */
+/* ************Section 4 Thesis exhibit******** */
+/* Common properties for Section4 */
+.Section4{
+  display: block;
+  /* width: 100%; */
+  text-align: center;
+  background-color: white;
+  justify-content: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+/* Title of Section 4 */
+.Section4_Tittle{
+  font-size: 3rem;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+/* Code for main container of section 3 */
+.Section4Container{
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Section4Titles{
+  font-size: 2rem;
+  padding-top: 24px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+
+}
+
+.Section4Images{
+  height: auto;
+  width: 100%;
+  margin: 16px 0 16px 16px;
+}
+
+/* Code for Section 4_1 which contain the video and the reimagine urban */
+.Section4_1{
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0;
+    margin: 0 0 24px 0;
+    width:60%;
+    background-color: white;
+}
+
+/* Text properties inside Fisma and Now and Then */
+.Section4Content{
+  color: darkgray;
+  padding: 0;
+  padding-left: 8px;
+
+}
+/* Code for Section 3_2 which is the second meshrowof 3 pictures */
+.Section4_2{
+  display: inline-flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0;
+  margin: 0 24px 0px 24px;
+  width: 40%;
+  background-color: white;
+}
+/* Section 4_2 Fisma flexbox properties */
+.Fisma{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 8px;
+  align-items: center;
+}
+/* Picture property inside Fisma section */
+.FismaPic{
+  width: 35%;
+}
+/* Text property inside Fisma section */
+.FismaText{
+  width: 65%;
+  margin-left: 16px;
+  align-items: center;
+
+}
+/* Section 4_2 Nowandthen flexbox properties*/
+.Nowandthen{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 8px;
+  align-items: center;
+}
+/* Picture property inside Nowandthen section */
+.NowandthenPic{
+  width:35%;
+}
+/* Text property inside Nowandthetext */
+.NowandthenText{
+  width: 65%;
+  margin-left: 16px;
+  align-items: center;
+
+}
+/* ******END OF Section 4 Thesis exhibit ********/
+/* ******************************************** */
+/* ***************Code for footer********* */
+.PageFooter{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.Copyright p{
+  margin-top: 16px;
+  margin-left: 24px;
+}
+.Terms p{
+  margin-top: 16px;
+  margin-right: 24px;
 }
