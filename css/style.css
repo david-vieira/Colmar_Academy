@@ -1,467 +1,703 @@
-html{
-  font-size: 20px;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif */
-  background-color: white;
-}
+/* **Start of code for mobile devices** */
+@media only screen and (max-width:1080px){
+  html{
+    font-size: 20px;
+    background-color: white;
+  }
 
-/* **************************HEADER CODE *********************/
-/* This the code for the header of the page width and height*/
-.Header{
-  height:64px;
-  width: 100%;
-  display:inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+/* Header properties for mobile device */
+/* Header changes in mobile mode */
+/* Normal header disappear */
+  .LeftSection{
+    display:none;
+  }
+  .RightSection{
+    display:none;
+  }
+  /* Normal header disappear */
 
-}
-/* ******************Left Section of Header**************** */
-.Header .LeftSection{
-  display:flex;
-  align-items: center;
-}
-/* Header / Logo */
-.Header .LeftSection .logo{
-  padding-left: 24px;
-  display: flex;
-}
-
-/* Header text propetries */
-.Header .LeftSection .organization{
-  display: flex;
-  color: black;
-  padding: 0;
-  font-weight: bold;
-}
-.Header .LeftSection .organization2{
-  display: flex;
-  color: lightgrey;
-  padding: 0;
-}
-/* **************End of left section coding ***************/
-
-/* ****************Right Section of Header*************** */
-.Header .RightSection{
-  display:flex;
-  align-items: center;
-
-}
-.RightSection {
-  display: inline-block;
-  padding: 0 16px;
-}
-.RightSection p:hover {
+  .Header{
+    width:100%;
+  }
+  .MobileHeader{
+    height: 64px;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  /* Section 1 Changes */
+    .Section1{
+      background-color: lightgrey;
+    }
+    .Banner{
+      width: 100%;
+    }
+    .BannerText{
+      width: 100%;
+      display:flex;
+      flex-direction: column;
+      margin: 0 16px 32px 16px;
+      justify-content: center;
+    }
+    .BannerText h1{
+      margin: 32px 16px;
+      font-weight: bold;
+      font-size: 2rem;
+      color: #393535;
+    }
+    .BannerText p{
+      margin-top: 0px;
+      margin-left: 16px;
+      margin-right: 16px;
+      margin-bottom: 24px;
+      font-size: 1rem;
+      color: #393535;
+    }
+    .BannerText a {
+      width: 100%;
+      font-size: 0.8rem;
+      color: white;
+      background-color: #393535;
+      padding: 24px 0px;
+      text-decoration: none;
+      text-align: center;
+    }
+  /* ******End of Section 1 Changes***** */
+  /* ******Section 2 Changes************ */
+  /* Left section of section 2 hidden */
+  .Section2Left{
+    display: none;
+  }
+  /* Right section of scetion 2 */
+  .Section2Right{
+    width:100%;
+  }
+  .sectiontittle{
+    font-weight: bold;
+    font-size: 2rem;
+    color: #393535;
+  }
+  .sectiondetails{
+    font-size: 1rem;
+    color: #393535;
+  }
+  .ReadMore{
+    text-decoration: none;
+    color:blue;
+  }
+  /* 1st section */
+  .OrientationDate{
+    flex-direction: column;
+  }
+  .Orientation{
+    width:100%;
+    padding: 0px;
+  }
+  .Details{
+    margin:32px 8px;
+  }
+  /* 2nd section */
+  .OurCampus{
+    flex-direction: column;
+  }
+  .Campus{
+    width:100%;
+    padding: 0px;
+  }
+  .Details2{
+    margin:32px 8px;
+  }
+  /* 3rd section */
+  .OurGuestLecture{
+    flex-direction: column;
+  }
+  .Guest{
+    width:100%;
+    padding: 0px;
+  }
+  .Details3{
+    margin:32px 8px;
+  }
+  /* ******End of Section 2 Changes***** */
+  /* ****Start of Section 3 Changes***** */
+  .Section3{
+    width: 100%;
+  }
+  .Section3_Tittle{
+    width:100%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .Section3Container{
+    width:100%;
+    display: inline-flex;
+    flex-direction:column;
+    margin-bottom: 32px;
+  }
+  /* Section 3_1 originally top3 windows */
+  .Section3_1{
+      display: inline-flex;
+      flex-direction:column;
+      margin-bottom: 8px;
+  }
+  .Section3_1 img{
+    display:none;
+  }
+  .Section3_1 h3{
+    display:none;
+  }
+  .Section3_1 p{
+    display:none;
+  }
+  .Section3_1 h2{
+    width: 100%;
     background-color: lightgrey;
-}
-.spacer{
-  display: flex;
-  height:64px;
-  width: 16px;
-  background-color: white;
-  /* background-color: #393535; */
-}
-/* **************End of Right section coding ***************/
-/* **************************HEADER CODE END****************/
-
-/* ************************BANNER CODE *********************/
-.Section1{
-  display:inline-flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: lightgrey;
-  width: 100%;
-}
-
-.Section1 .Banner{
-  display: flex;
-  width: 60%;
-  padding: 0;
-  margin: 32px 24px;
-}
-/* Size the text section of the Banner */
-.Section1 .BannerText{
-  display:flex;
-  flex-direction: column;
-  width: 30%;
-}
-/* Text Properties code for the banner */
-.Section1 .BannerText h1 {
-  font-size: 2rem;
-  color: #393535;
-  padding: 24px 0px;
-}
-.Section1 .BannerText p {
-  font-size: 1rem;
-  color: #393535;
-  padding: 24px 0px;
-}
-
-.Section1 .BannerText a {
-  font-size: 0.8rem;
-  color: white;
-  background-color: #393535;
-  padding: 24px 0px;
-  text-decoration: none;
-  text-align: center;
-}
-/* ********************END**BANNER CODE *********************/
-/* ***Section 2 Coding It doesn't hurt to keep practicing ***/
-.Section2{
-  display:inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-}
-
-/* Code for Left Section of Section 2 */
- .Section2 .Section2Left{
-  width: 60%;
-
-}
-.Section2 .Section2Left .InformationMain{
-  width: 100%;
-  padding: 32px 24px;
-}
-.Section2 .Section2Left .Section2LeftTitle{
-  width: 100%;
-  font-size: 4rem;
-  color: #393535;
-  padding: 0;
-  margin: 0 24px;
-}
-
-.Section2 .Section2Left .Section2LeftContent{
-  width: 100%;
-  font-size: 1.5rem;
-  color: #393535;
-  padding: 0px;
-  margin: 24px 24px 32px 24px;
-}
-
-/* Code for Right Section of Section 2 */
-/* Flex setup for the pictures Column */
-.Section2 .Section2Right{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 40%;
-  padding: 0px 0px 0px 25px;
-  margin: 32px 0px 32px 24px;
-}
-
-/* Right Section of Section 2 text properties */
-.Section2 .Section2Right h3{
-    font-size: 2.5rem;
-}
-.Section2 .Section2Right a p{
     font-size: 1.5rem;
-}
-.sectiontittle{
-  padding: 4px;
-}
-.sectiondetails{
-  padding: 4px;
-}
-.ReadMore{
-  text-decoration: none;
-  color: blue;
-  padding: 4px;
-
-}
-
-
-/* Flex implementation for the individual picture boxes */
-/* Orientation Date Section */
-.Section2 .Section2Right .OrientationDate{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  border: 1px solid lightgrey;
-
-}
-.Section2 .Section2Right .OrientationDate:hover{
-  background-color: lightgrey;
-}
-.Section2 .Section2Right .OrientationDate .Orientation{
-  width: 35%;
-  height: auto;
-  padding: 0 16px 16px 16px;
-}
-.Section2 .Section2Right .OrientationDate .Details{
-  width: 65%;
-}
-
-/* Our Campus Section */
-.Section2 .Section2Right .OurCampus{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  border: 1px solid lightgrey;
-}
-.Section2 .Section2Right .OurCampus:hover{
-  background-color: lightgrey;
-}
-.Section2 .Section2Right .OurCampus .Campus{
-  Width: 35%;
-  height: auto;
-  padding: 16px;
-}
-.Section2 .Section2Right .OurCampus .Details2{
-  width: 65%;
-}
-
-
-/* Our Guest Section */
-.Section2 .Section2Right .OurGuestLecture{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  border: 1px solid lightgrey;
-}
-.Section2 .Section2Right .OurGuestLecture:hover{
-  background-color: lightgrey;
-}
-.Section2 .Section2Right .OurGuestLecture .Guest{
-  Width: 35%;
-  height: auto;
-  padding: 16px;
-}
-.Section2 .Section2Right .OurGuestLecture .Details3{
-  width: 65%;
-}
-/* ***END OF Section 2 Coding It doesn't hurt to keep practicing ***/
-/* ******************************************** */
-/* ************Section 3 Start Learning******** */
-/* Common properties for Section3 */
-.Section3{
-  display: block;
-  /* width: 100%; */
-  text-align: center;
-  background-color: lightgrey;
-  justify-content: center;
-  padding-left: 72px;
-  padding-right: 72px;
-}
-/* Title of Section 3 */
-.Section3_Tittle{
-  font-size: 3rem;
-  padding-top: 32px;
-  padding-bottom: 32px;
+    text-align: left;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+    color:#393535;
+  }
+  /* Section 3_2 originally bottom 3 windows */
+  .Section3_2{
+      display: inline-flex;
+      flex-direction:column;
+  }
+  .Section3_2 img{
+    display:none;
+  }
+  .Section3_2 h3{
+    display:none;
+  }
+  .Section3_2 p{
+    display:none;
+  }
+  .Section3_2 h2{
+    width: 100%;
+    background-color: lightgrey;
+    font-size: 1.5rem;
+    text-align: left;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+    color:#393535;
+  }
+  /* ******End of Section 3 Changes***** */
+  /* ****Start of Section 4 Changes***** */
+  .Section4{
+    width: 100%;
+  }
+  .Section4_Tittle{
+    width:100%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 3rem;
+    text-align: center;
+  }
+  /* Section 4_1 is the left section of section4 */
+  .Section4_1 video{
+    width:100%;
+    margin-bottom:24px;
+  }
+  .Section4_1 h2{
+    display:none;
+  }
+  .Section4_1 p{
+    display:none;
+  }
+  .Section4_2{
+    display:none;
+  }
+  /* ******End of Section 4 Changes***** */
+  /* ****Start of Footer Changes******** */
+  .Copyright{
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .Terms{
+    display: none;
+  }
+  /* ******End of Footer Changes******** */
 }
 
-/* Code for main container of section 3 */
-.Section3Container{
-  display: inline-flex;
-  flex-direction: column;
-  width: 100%;
-}
+@media only screen and (min-width:1080px){
+  html{
+    font-size: 20px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif */
+    background-color: white;
+  }
+  .MobileHeader{
+    display: none;
+  }
 
-/* Common properties for all images of section3 */
-.Section3Images{
-  height: auto;
-  width: 100%;
-}
-/* Common properties for titles of section 3 */
-.Section3Titles{
-  font-size: 2rem;
-  font-weight: bolder;
-  margin: 32px;
-}
-/* Common properties for subtitles of section 3 */
-.Section3SubTittle{
-  font-size: 1.3rem;
-  color: darkgray;
-  padding: 8px 16px;
-}
+  /* **************************HEADER CODE *********************/
+  /* This the code for the header of the page width and height*/
+  .Header{
+    height:64px;
+    width: 100%;
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-.Section3Content{
-  font-size: 1rem;
-  color: darkgray;
-  margin-top: 0px;
-  margin-left: 16px;
-  margin-bottom: 24px;
+  }
+  /* ******************Left Section of Header**************** */
+  .Header .LeftSection{
+    display:flex;
+    align-items: center;
+  }
+  /* Header / Logo */
+  .Header .LeftSection .logo{
+    padding-left: 24px;
+    display: flex;
+  }
 
-}
-/* Code for Section 3_1 which is the first 3
-horizontal Pictures */
-.Section3_1{
+  /* Header text propetries */
+  .Header .LeftSection .organization{
+    display: flex;
+    color: black;
+    padding: 0;
+    font-weight: bold;
+  }
+  .Header .LeftSection .organization2{
+    display: flex;
+    color: lightgrey;
+    padding: 0;
+  }
+  /* **************End of left section coding ***************/
+
+  /* ****************Right Section of Header*************** */
+  .Header .RightSection{
+    display:flex;
+    align-items: center;
+
+  }
+  .RightSection {
+    display: inline-block;
+    padding: 0 16px;
+  }
+  .RightSection p:hover {
+      background-color: lightgrey;
+  }
+  .spacer{
+    display: flex;
+    height:64px;
+    width: 16px;
+    background-color: white;
+    /* background-color: #393535; */
+  }
+  /* **************End of Right section coding ***************/
+  /* **************************HEADER CODE END****************/
+
+  /* ************************BANNER CODE *********************/
+  .Section1{
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: lightgrey;
+    width: 100%;
+  }
+
+  .Section1 .Banner{
+    display: flex;
+    width: 60%;
+    padding: 0;
+    margin: 32px 24px;
+  }
+  /* Size the text section of the Banner */
+  .Section1 .BannerText{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+  }
+  /* Text Properties code for the banner */
+  .Section1 .BannerText h1 {
+    font-size: 2rem;
+    color: #393535;
+    padding: 24px 0px;
+  }
+  .Section1 .BannerText p {
+    font-size: 1rem;
+    color: #393535;
+    padding: 24px 0px;
+  }
+
+  .Section1 .BannerText a {
+    font-size: 0.8rem;
+    color: white;
+    background-color: #393535;
+    padding: 24px 0px;
+    text-decoration: none;
+    text-align: center;
+  }
+  /* ********************END**BANNER CODE *********************/
+  /* ***Section 2 Coding It doesn't hurt to keep practicing ***/
+  .Section2{
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  /* Code for Left Section of Section 2 */
+   .Section2 .Section2Left{
+    width: 60%;
+
+  }
+  .Section2 .Section2Left .InformationMain{
+    width: 100%;
+    padding: 32px 24px;
+  }
+  .Section2 .Section2Left .Section2LeftTitle{
+    width: 100%;
+    font-size: 4rem;
+    color: #393535;
+    padding: 0;
+    margin: 0 24px;
+  }
+
+  .Section2 .Section2Left .Section2LeftContent{
+    width: 100%;
+    font-size: 1.5rem;
+    color: #393535;
+    padding: 0px;
+    margin: 24px 24px 32px 24px;
+  }
+
+  /* Code for Right Section of Section 2 */
+  /* Flex setup for the pictures Column */
+  .Section2 .Section2Right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 40%;
+    padding: 0px 0px 0px 25px;
+    margin: 32px 0px 32px 24px;
+  }
+
+  /* Right Section of Section 2 text properties */
+  .Section2 .Section2Right h3{
+      font-size: 2.5rem;
+  }
+  .Section2 .Section2Right a p{
+      font-size: 1.5rem;
+  }
+  .sectiontittle{
+    padding: 4px;
+  }
+  .sectiondetails{
+    padding: 4px;
+  }
+  .ReadMore{
+    text-decoration: none;
+    color: blue;
+    padding: 4px;
+
+  }
+
+
+  /* Flex implementation for the individual picture boxes */
+  /* Orientation Date Section */
+  .Section2 .Section2Right .OrientationDate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid lightgrey;
+
+  }
+  .Section2 .Section2Right .OrientationDate:hover{
+    background-color: lightgrey;
+  }
+  .Section2 .Section2Right .OrientationDate .Orientation{
+    width: 35%;
+    height: auto;
+    padding: 0 16px 16px 16px;
+  }
+  .Section2 .Section2Right .OrientationDate .Details{
+    width: 65%;
+  }
+
+  /* Our Campus Section */
+  .Section2 .Section2Right .OurCampus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid lightgrey;
+  }
+  .Section2 .Section2Right .OurCampus:hover{
+    background-color: lightgrey;
+  }
+  .Section2 .Section2Right .OurCampus .Campus{
+    Width: 35%;
+    height: auto;
+    padding: 16px;
+  }
+  .Section2 .Section2Right .OurCampus .Details2{
+    width: 65%;
+  }
+
+
+  /* Our Guest Section */
+  .Section2 .Section2Right .OurGuestLecture{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid lightgrey;
+  }
+  .Section2 .Section2Right .OurGuestLecture:hover{
+    background-color: lightgrey;
+  }
+  .Section2 .Section2Right .OurGuestLecture .Guest{
+    Width: 35%;
+    height: auto;
+    padding: 16px;
+  }
+  .Section2 .Section2Right .OurGuestLecture .Details3{
+    width: 65%;
+  }
+  /* ***END OF Section 2 Coding It doesn't hurt to keep practicing ***/
+  /* ******************************************** */
+  /* ************Section 3 Start Learning******** */
+  /* Common properties for Section3 */
+  .Section3{
+    display: block;
+    /* width: 100%; */
+    text-align: center;
+    background-color: lightgrey;
+    justify-content: center;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+  /* Title of Section 3 */
+  .Section3_Tittle{
+    font-size: 3rem;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  /* Code for main container of section 3 */
+  .Section3Container{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Common properties for all images of section3 */
+  .Section3Images{
+    height: auto;
+    width: 100%;
+  }
+  /* Common properties for titles of section 3 */
+  .Section3Titles{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 32px;
+  }
+  /* Common properties for subtitles of section 3 */
+  .Section3SubTittle{
+    font-size: 1.3rem;
+    color: darkgray;
+    padding: 8px 16px;
+  }
+
+  .Section3Content{
+    font-size: 1rem;
+    color: darkgray;
+    margin-top: 0px;
+    margin-left: 16px;
+    margin-bottom: 24px;
+
+  }
+  /* Code for Section 3_1 which is the first 3
+  horizontal Pictures */
+  .Section3_1{
+      display: inline-flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0 0 16px 0;
+  }
+  /* section 3_1 software engineering */
+  .Section3_1 .SoftwareEngineering{
+    margin: 0 16px 16px 0;
+    background-color: white;
+    width: 33%;
+  }
+  /* section 3_1 Computer Art */
+  .Section3_1 .ComputerArt{
+    margin: 0 16px 16px 16px;
+    background-color: white;
+    width: 34%;
+  }
+  /* section 3_1 Design */
+  .Section3_1 .Design{
+    margin: 0 0 16px 16px;
+    background-color: white;
+    width: 33%;
+  }
+
+  /* Code for Section 3_2 which is the second meshrowof 3 pictures */
+  .Section3_2{
     display: inline-flex;
     justify-content: center;
     padding: 0;
     margin: 0 0 16px 0;
-}
-/* section 3_1 software engineering */
-.Section3_1 .SoftwareEngineering{
-  margin: 0 16px 16px 0;
-  background-color: white;
-  width: 33%;
-}
-/* section 3_1 Computer Art */
-.Section3_1 .ComputerArt{
-  margin: 0 16px 16px 16px;
-  background-color: white;
-  width: 34%;
-}
-/* section 3_1 Design */
-.Section3_1 .Design{
-  margin: 0 0 16px 16px;
-  background-color: white;
-  width: 33%;
-}
+  }
+  /* section 3_2 Data */
+  .Section3_2 .Data{
+    margin: 0 16px 0 0;
+    background-color: white;
+    width: 33%;
+  }
+  /* section 3_2 Business */
+  .Section3_2 .Business{
+    margin: 0 16px 0px 16px;
+    background-color: white;
+    width: 34%;
+  }
+  /* section 3_2 Marketing */
+  .Section3_2 .Marketing{
+    margin: 0 0 0px 16px;
+    background-color: white;
+    width: 33%;
+  }
+  /* ******END OF Section 3 Start Learning ********/
+  /* ******************************************** */
+  /* ************Section 4 Thesis exhibit******** */
+  /* Common properties for Section4 */
+  .Section4{
+    display: block;
+    /* width: 100%; */
+    text-align: center;
+    background-color: white;
+    justify-content: center;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  /* Title of Section 4 */
+  .Section4_Tittle{
+    font-size: 3rem;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  /* Code for main container of section 3 */
+  .Section4Container{
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+  }
 
-/* Code for Section 3_2 which is the second meshrowof 3 pictures */
-.Section3_2{
-  display: inline-flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0 0 16px 0;
-}
-/* section 3_2 Data */
-.Section3_2 .Data{
-  margin: 0 16px 0 0;
-  background-color: white;
-  width: 33%;
-}
-/* section 3_2 Business */
-.Section3_2 .Business{
-  margin: 0 16px 0px 16px;
-  background-color: white;
-  width: 34%;
-}
-/* section 3_2 Marketing */
-.Section3_2 .Marketing{
-  margin: 0 0 0px 16px;
-  background-color: white;
-  width: 33%;
-}
-/* ******END OF Section 3 Start Learning ********/
-/* ******************************************** */
-/* ************Section 4 Thesis exhibit******** */
-/* Common properties for Section4 */
-.Section4{
-  display: block;
-  /* width: 100%; */
-  text-align: center;
-  background-color: white;
-  justify-content: center;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-/* Title of Section 4 */
-.Section4_Tittle{
-  font-size: 3rem;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-/* Code for main container of section 3 */
-.Section4Container{
-  display: inline-flex;
-  flex-direction: row;
-  width: 100%;
-}
+  .Section4Titles{
+    font-size: 2rem;
+    padding-top: 24px;
+    padding-bottom: 8px;
+    padding-left: 8px;
 
-.Section4Titles{
-  font-size: 2rem;
-  padding-top: 24px;
-  padding-bottom: 8px;
-  padding-left: 8px;
+  }
 
-}
+  .Section4Images{
+    height: auto;
+    width: 100%;
+    margin: 16px 0 16px 16px;
+  }
 
-.Section4Images{
-  height: auto;
-  width: 100%;
-  margin: 16px 0 16px 16px;
-}
+  /* Code for Section 4_1 which contain the video and the reimagine urban */
+  .Section4_1{
+      display: inline-flex;
+      flex-direction: column;
+      text-align: left;
+      padding: 0;
+      margin: 0 0 24px 0;
+      width:60%;
+      background-color: white;
+  }
 
-/* Code for Section 4_1 which contain the video and the reimagine urban */
-.Section4_1{
+  /* Text properties inside Fisma and Now and Then */
+  .Section4Content{
+    color: darkgray;
+    padding: 0;
+    padding-left: 8px;
+
+  }
+  /* Code for Section 3_2 which is the second meshrowof 3 pictures */
+  .Section4_2{
     display: inline-flex;
     flex-direction: column;
     text-align: left;
     padding: 0;
-    margin: 0 0 24px 0;
-    width:60%;
+    margin: 0 24px 0px 24px;
+    width: 40%;
     background-color: white;
-}
+  }
+  /* Section 4_2 Fisma flexbox properties */
+  .Fisma{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 8px;
+    align-items: center;
+  }
+  /* Picture property inside Fisma section */
+  .FismaPic{
+    width: 35%;
+  }
+  /* Text property inside Fisma section */
+  .FismaText{
+    width: 65%;
+    margin-left: 16px;
+    align-items: center;
 
-/* Text properties inside Fisma and Now and Then */
-.Section4Content{
-  color: darkgray;
-  padding: 0;
-  padding-left: 8px;
+  }
+  /* Section 4_2 Nowandthen flexbox properties*/
+  .Nowandthen{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 8px;
+    align-items: center;
+  }
+  /* Picture property inside Nowandthen section */
+  .NowandthenPic{
+    width:35%;
+  }
+  /* Text property inside Nowandthetext */
+  .NowandthenText{
+    width: 65%;
+    margin-left: 16px;
+    align-items: center;
 
-}
-/* Code for Section 3_2 which is the second meshrowof 3 pictures */
-.Section4_2{
-  display: inline-flex;
-  flex-direction: column;
-  text-align: left;
-  padding: 0;
-  margin: 0 24px 0px 24px;
-  width: 40%;
-  background-color: white;
-}
-/* Section 4_2 Fisma flexbox properties */
-.Fisma{
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 8px;
-  align-items: center;
-}
-/* Picture property inside Fisma section */
-.FismaPic{
-  width: 35%;
-}
-/* Text property inside Fisma section */
-.FismaText{
-  width: 65%;
-  margin-left: 16px;
-  align-items: center;
-
-}
-/* Section 4_2 Nowandthen flexbox properties*/
-.Nowandthen{
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 8px;
-  align-items: center;
-}
-/* Picture property inside Nowandthen section */
-.NowandthenPic{
-  width:35%;
-}
-/* Text property inside Nowandthetext */
-.NowandthenText{
-  width: 65%;
-  margin-left: 16px;
-  align-items: center;
-
-}
-/* ******END OF Section 4 Thesis exhibit ********/
-/* ******************************************** */
-/* ***************Code for footer********* */
-.PageFooter{
-  display: inline-flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.Copyright p{
-  margin-top: 16px;
-  margin-left: 24px;
-}
-.Terms p{
-  margin-top: 16px;
-  margin-right: 24px;
+  }
+  /* ******END OF Section 4 Thesis exhibit ********/
+  /* ******************************************** */
+  /* ***************Code for footer********* */
+  .PageFooter{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .Copyright p{
+    margin-top: 16px;
+    margin-left: 24px;
+  }
+  .Terms p{
+    margin-top: 16px;
+    margin-right: 24px;
+  }
+  /* ******END OF Code for footer ********/
+  /************************************** */
 }
